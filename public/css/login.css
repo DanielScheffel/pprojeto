@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    font-family: 'Inika', serif;
+}
+
+@keyframes background {
+    100% {background-position: 20% 50%;}
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/assets/fundo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation: background 6s infinite alternate linear;
+}
+
+.card{
+    width: 420px;
+    height: 420px;
+    padding: 2.5rem 1.9rem;
+    text-align: center;
+    background: #8aa5bd;
+    border-radius: 10px;
+}
+
+.form{
+    margin-top: 1.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    background-color: #eaebed;
+    border-radius: 5px;
+    padding: .9em 1.5em;
+}
+
+.input-field{
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #243d67;
+}
+
+.input-icon{
+    height: 1em;
+    width: 1em;
+    fill: #c27dfc;
+}
+
+.title{
+    margin-bottom: 1rem;
+    font-size: 1.9em;
+    font-weight: 700;
+    color: #243d67;
+}
+
+.btn{
+    margin: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 0.7em 1.2em;
+    background-color: #6e5dcf;
+    color: #eaebed;
+    box-shadow: 0 8px 24px 0 rgb(255 235 167 / 20%);
+    transition: all .3s ease-in-out;
+}
+
+.btn-link{
+    color: #eaebed;
+    display: block;
+    font-size: 1em;
+    transition: color .3s ease-out;
+}
+
+.field input:focus::placeholder{
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.btn:hover{
+    background-color: #243d67;
+    color: #45e3ff;
+    box-shadow: 0 8px 24px 0 rgb(16 39 112 / 20%);
+}
+
+.btn-link:hover{
+    color: #243d67;
+}
